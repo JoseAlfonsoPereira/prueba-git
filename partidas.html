@@ -45,6 +45,8 @@
                     </select>
                 </div>
 
+                <button type="button" id="restablecer-filtros" class="boton-secundario">Restablecer filtros</button>
+
                 <span id="contador-partidas" class="contador-partidas">Mostrando 5 campañas</span>
             </div>
 
@@ -57,6 +59,7 @@
                             <th>Nivel</th>
                             <th>Jugadores</th>
                             <th>Día</th>
+                            <th>Inscripción</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -66,6 +69,7 @@
                             <td>1-5</td>
                             <td>5</td>
                             <td>Viernes</td>
+                            <td><a class="enlace-solicitar" href="contacto.html" data-campania="mina-perdida">Solicitar plaza</a></td>
                         </tr>
                         <tr>
                             <td>Curse of Strahd</td>
@@ -73,6 +77,7 @@
                             <td>3-10</td>
                             <td>4</td>
                             <td>Sábado</td>
+                            <td><a class="enlace-solicitar" href="contacto.html" data-campania="curse-of-strahd">Solicitar plaza</a></td>
                         </tr>
                         <tr>
                             <td>Dragonlance</td>
@@ -80,6 +85,7 @@
                             <td>5-12</td>
                             <td>6</td>
                             <td>Domingo</td>
+                            <td><a class="enlace-solicitar" href="contacto.html" data-campania="dragonlance">Solicitar plaza</a></td>
                         </tr>
                         <tr>
                             <td>Waterdeep: Dragon Heist</td>
@@ -87,6 +93,7 @@
                             <td>1-5</td>
                             <td>5</td>
                             <td>Miércoles</td>
+                            <td><a class="enlace-solicitar" href="contacto.html" data-campania="waterdeep">Solicitar plaza</a></td>
                         </tr>
                         <tr>
                             <td>Icewind Dale</td>
@@ -94,10 +101,15 @@
                             <td>1-12</td>
                             <td>4</td>
                             <td>Jueves</td>
+                            <td><a class="enlace-solicitar" href="contacto.html" data-campania="icewind-dale">Solicitar plaza</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
+            <p id="sin-resultados" class="sin-resultados" role="status" aria-live="polite" hidden>
+                No hay campañas que coincidan con ese filtro. Prueba a cambiar el día o el nivel, o pulsa en "Restablecer filtros".
+            </p>
 
             <figure class="emblema-dnd">
                 <img src="img/imagen2.webp" alt="Emblema de Dungeons &amp; Dragons" width="320">

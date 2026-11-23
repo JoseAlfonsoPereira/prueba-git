@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Contacto - D&amp;D HUB</title>
 </head>
-<body>
+<body id="arriba">
     <header>
         <h1>D&amp;D HUB</h1>
         <p>Ponte en contacto con los Directores de Juego y únete a una mesa.</p>
@@ -59,6 +59,14 @@
             </form>
 
             <div id="confirmacion-contacto" class="confirmacion-contacto" role="status" aria-live="polite" hidden></div>
+        </section>
+
+        <section id="seccion-solicitudes" class="historial-solicitudes" hidden>
+            <div class="historial-cabecera">
+                <h3>Solicitudes recientes</h3>
+                <button type="button" id="borrar-solicitudes" class="boton-secundario">Borrar historial</button>
+            </div>
+            <ul id="lista-solicitudes" class="lista-solicitudes"></ul>
         </section>
     </main>
 

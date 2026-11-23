@@ -1,0 +1,18 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos temporales o de editores
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.log
+
+# Carpetas comunes de dependencias o entornos si llegaras a añadirlas
+node_modules/
+.vscode/
+.idea/
