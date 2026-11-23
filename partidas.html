@@ -4,69 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Partidas - D&D HUB</title>
+    <title>Partidas - D&amp;D HUB</title>
 </head>
-<body>
+<body id="arriba">
     <header>
-        <h1>Partidas disponibles</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="partidas.html">Partidas</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <h1>D&amp;D HUB</h1>
+        <p>Explora las mesas activas y encuentra tu próxima aventura.</p>
     </header>
-<main>
-    <h2>Campañas disponibles</h2>
-    <p>Explora las campañas disponibles y únete a la aventura que más te guste.</p>
-<table border="1">
-        <tr>
-        <th>Campaña</th>
-        <th>Director</th>
-        <th>Nivel</th>
-        <th>Jugadores</th>
-        <th>Día</th>
-    </tr>
-    <tr>
-        <td>La Mina Perdida de Phandelver</td>
-        <td>Carlos</td>
-        <td>1-5</td>
-        <td>5</td>
-        <td>Viernes</td>
-    </tr>
-    <tr>
-        <td>Curse of Strahd</td>
-        <td>Ana</td>
-        <td>3-10</td>
-        <td>4</td>
-        <td>Sábado</td>
-    </tr>
-    <tr>
-        <td>Dragonlance</td>
-        <td>Mario</td>
-        <td>5-12</td>
-        <td>6</td>
-        <td>Domingo</td>
-    </tr>
-    <tr>
-        <td>Waterdeep: Dragon Heist</td>
-        <td>Laura</td>
-        <td>1-5</td>
-        <td>5</td>
-        <td>Miércoles</td>
-    </tr>
-    <tr>
-        <td>Icewind Dale</td>
-        <td>David</td>
-        <td>1-12</td>
-        <td>4</td>
-        <td>Jueves</td>
-    </tr>
-</table>
-<img src="img/imagen2.jpg" alt="Campaña de Dungeons & Dragons" width="400">
-</main>
-<footer>
-    <p>Jose Alfonso Pereira Sambruno</p>
-    <p>Proyecto D&D HUB</p>
-</footer>
+
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="partidas.html" class="activo" aria-current="page">Partidas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Campañas disponibles</h2>
+            <p>Consulta los detalles de cada campaña y solicita tu plaza desde la sección de contacto.</p>
+
+            <div class="filtro-partidas">
+                <div class="filtro-grupo">
+                    <label for="filtro-dia">Filtrar por día:</label>
+                    <select id="filtro-dia" name="filtro-dia">
+                        <option value="todos">Todos los días</option>
+                        <option value="Miércoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sábado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+                </div>
+
+                <div class="filtro-grupo">
+                    <label for="filtro-nivel">Filtrar por nivel:</label>
+                    <select id="filtro-nivel" name="filtro-nivel">
+                        <option value="todos">Todos los niveles</option>
+                        <option value="bajo">Nivel inicial (empieza en 1)</option>
+                        <option value="intermedio">Nivel medio-alto (empieza en 3 o 5)</option>
+                    </select>
+                </div>
+
+                <span id="contador-partidas" class="contador-partidas">Mostrando 5 campañas</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campaña</th>
+                            <th>Director</th>
+                            <th>Nivel</th>
+                            <th>Jugadores</th>
+                            <th>Día</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>La Mina Perdida de Phandelver</td>
+                            <td>Carlos</td>
+                            <td>1-5</td>
+                            <td>5</td>
+                            <td>Viernes</td>
+                        </tr>
+                        <tr>
+                            <td>Curse of Strahd</td>
+                            <td>Ana</td>
+                            <td>3-10</td>
+                            <td>4</td>
+                            <td>Sábado</td>
+                        </tr>
+                        <tr>
+                            <td>Dragonlance</td>
+                            <td>Mario</td>
+                            <td>5-12</td>
+                            <td>6</td>
+                            <td>Domingo</td>
+                        </tr>
+                        <tr>
+                            <td>Waterdeep: Dragon Heist</td>
+                            <td>Laura</td>
+                            <td>1-5</td>
+                            <td>5</td>
+                            <td>Miércoles</td>
+                        </tr>
+                        <tr>
+                            <td>Icewind Dale</td>
+                            <td>David</td>
+                            <td>1-12</td>
+                            <td>4</td>
+                            <td>Jueves</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <figure class="emblema-dnd">
+                <img src="img/imagen2.webp" alt="Emblema de Dungeons &amp; Dragons" width="320">
+            </figure>
+
+            <p class="volver-arriba"><a href="#arriba">Volver arriba</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jose Alfonso Pereira Sambruno</p>
+        <p>Proyecto D&amp;D HUB</p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

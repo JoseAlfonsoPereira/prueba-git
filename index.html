@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>D&D HUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>D&amp;D HUB - Inicio</title>
 </head>
 <body>
-   <header>
-      <h1>D&D HUB</h1>
-      <p>Crea y disfruta partidas de Dungeons & Dragons online.</p>
-   </header>
-<nav>
-   <a href="index.html">Inicio</a>
-   <a href="partidas.html">Partidas</a>
-   <a href="contacto.html">Contacto</a>
-</nav>
-<main>
-   <h2>Bienvenido a D&D HUB</h2>
-   <p>Únete a una comunidad de aventureros, crea tus propias campañas y comparte increíbles experiencias de todo el mundo.</p>
-   <ul>
-      <li>Crear una partida</li>
-      <li>Unirse a una partida</li>
-      <li>Gestionar campañas</li>
-      <li>Crear personajes</li>
-      <li>Chatear con otros jugadores</li>
-      <li>Consultar reglas básicas</li>
-   </ul>
-   <img src="img/imagen1.jpg" alt="Grupo de personajes de Dungeons & Dragons" width="400">
-   <h3>Recurso recomendado</h3>
-   <p>Descubre reglas, personajes, campañas y mucho más en D&D Beyond.</p>
-   <a href="https://www.dndbeyond.com" target="_blank">Visitar D&D Beyond</a>
-</main>
-   <footer>
-      <p>Jose Alfonso Pereira Sambruno</p>
-      <p>Proyecto D&D HUB</p>
-   </footer>
+    <header>
+        <h1>D&amp;D HUB</h1>
+        <p>Crea y disfruta partidas de Dungeons &amp; Dragons online.</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <a href="index.html" class="activo" aria-current="page">Inicio</a>
+        <a href="partidas.html">Partidas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Bienvenido a D&amp;D HUB</h2>
+            <p>Únete a una comunidad de aventureros, crea tus propias campañas y comparte increíbles experiencias de todo el mundo.</p>
+
+            <ul class="lista-funciones">
+                <li><strong>Crear una partida:</strong> Diseña tus propias aventuras y organiza sesiones a tu medida.</li>
+                <li><strong>Unirse a una partida:</strong> Encuentra mesas abiertas según tu nivel y disponibilidad.</li>
+                <li><strong>Gestionar campañas:</strong> Lleva el control de sesiones, notas y progreso del grupo.</li>
+                <li><strong>Crear personajes:</strong> Prepara tus héroes y ten sus datos siempre a mano.</li>
+                <li><strong>Chatear con otros jugadores:</strong> Coordina horarios y estrategias con tu grupo.</li>
+                <li><strong>Consultar reglas básicas:</strong> Resuelve dudas rápidas durante la partida.</li>
+            </ul>
+
+            <figure class="ilustracion-principal">
+                <img src="img/imagen1.webp" alt="Grupo de personajes de Dungeons & Dragons en un bosque nocturno" width="400" height="400">
+                <figcaption>Reúne a tu grupo y comienza una nueva campaña.</figcaption>
+            </figure>
+        </section>
+
+        <section class="recurso-destacado">
+            <h3>Recurso recomendado</h3>
+            <p>Descubre reglas, personajes, campañas y herramientas oficiales en D&amp;D Beyond.</p>
+            <a class="boton-enlace" href="https://www.dndbeyond.com" target="_blank" rel="noopener noreferrer">Visitar D&amp;D Beyond</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jose Alfonso Pereira Sambruno</p>
+        <p>Proyecto D&amp;D HUB</p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

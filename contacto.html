@@ -4,41 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Contacto - D&D HUB</title>
+    <title>Contacto - D&amp;D HUB</title>
 </head>
 <body>
-<header>
-    <h1>Contacto</h1>
-    <nav>
+    <header>
+        <h1>D&amp;D HUB</h1>
+        <p>Ponte en contacto con los Directores de Juego y únete a una mesa.</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
         <a href="index.html">Inicio</a>
         <a href="partidas.html">Partidas</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="activo" aria-current="page">Contacto</a>
     </nav>
-</header>
-<main>
-    <h2>Únete a una aventura</h2>
-    <p>Completa el formulario para contactar y unirte a una campaña.</p>
-<form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="campania">Campaña de interés:</label>
-    <select id="campania" name="campania">
-        <option>La Mina Perdida de Phandelver</option>
-        <option>Curse of Strahd</option>
-        <option>Dragonlance</option>
-        <option>Icewind Dale</option>
-    </select>
-    <label>
-        <input type="checkbox" name="acepto" required>Acepto las condiciones de uso
-    </label>
-<button type="submit">Enviar</button>
-</form>
-</main>
-<footer>
-    <p>Jose Alfonso Pereira Sambruno</p>
-    <p>Proyecto D&D HUB</p>
-</footer>
+
+    <main>
+        <section>
+            <h2>Únete a una aventura</h2>
+            <p>Completa el formulario para contactar y solicitar plaza en una campaña.</p>
+
+            <form id="form-contacto" action="#" method="post">
+                <div class="campo-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre o apodo de aventurero" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="campania">Campaña de interés:</label>
+                    <select id="campania" name="campania">
+                        <option value="mina-perdida">La Mina Perdida de Phandelver</option>
+                        <option value="curse-of-strahd">Curse of Strahd</option>
+                        <option value="dragonlance">Dragonlance</option>
+                        <option value="waterdeep">Waterdeep: Dragon Heist</option>
+                        <option value="icewind-dale">Icewind Dale</option>
+                    </select>
+                </div>
+
+                <div class="campo-form">
+                    <label for="mensaje">Experiencia o comentario (opcional):</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si ya has jugado antes o qué clase te gustaría llevar..."></textarea>
+                </div>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="acepto" required>
+                    Acepto las condiciones de uso
+                </label>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+
+            <div id="confirmacion-contacto" class="confirmacion-contacto" role="status" aria-live="polite" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jose Alfonso Pereira Sambruno</p>
+        <p>Proyecto D&amp;D HUB</p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
